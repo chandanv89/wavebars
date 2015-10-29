@@ -1,0 +1,62 @@
+*{
+   padding: 0;
+   margin: 0;
+   z-index: 0;
+}
+
+body{
+   height: 100%;
+   width: 100%;
+}
+
+#wf-container{
+   width: 500px;
+   height: 150px;
+   _border: 1px dotted silver;
+   margin: 18% auto;
+}
+
+.wf-comp{
+   width: 100%;
+   height: 48.75%;
+   display: block;
+   _border: 1px solid #aaa;
+}
+
+.wf-bar{
+   width: 10px;
+   height: 25px;
+   display: inline-block;
+   
+   animation-duration: 4s;
+   animation-iteration-count: 10;
+   animation-direction: alternate;
+   animation-timing-function: ease-out;
+   animation-fill-mode: forwards;
+   animation-delay: 2s;
+}
+
+#wf-main{
+   z-index: 100;
+   opacity: 1;
+}
+
+#wf-shadow{
+   transform: skewX(-45deg);
+   z-index: -100;
+   opacity: 0.25;
+}
+
+#wf-main .wf-bar{
+   background: linear-gradient(#222, #000);
+   box-shadow: 0 0 10px white;
+   z-index: 1000;
+}
+
+#wf-shadow .wf-bar {
+   background: linear-gradient(#fff, black);
+   position: relative;
+   top: -73px;
+   left: -60px;
+   z-index: -1000;
+}
