@@ -61,6 +61,6 @@ $(function(){
       
       setTimeout(animateBG, 1000);
    }
-   //animateBG();
+   animateBG();
    animateBars();
 });
